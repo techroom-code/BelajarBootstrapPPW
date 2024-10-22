@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up Box</title>
+    </head>
+<body>
+    <button onclick="showAlert()">Alert</button>
+    <button onclick="showConfirm()">Confirm</button>
+    <button onclick="showPrompt()">Prompt</button>
+    <script>
+        function showAlert(){
+            alert("Halo Kom C1");
+        }
+        function showConfirm(){
+            let result = confirm("klik ok jika kamu sudah makan?");
+            if (result){
+                alert("Kamu sudah makan ");
+            } else {
+                alert("Kamu belum makan");
+            }
+            }
+
+            function showPrompt(){
+                let nama = prompt("Masukkan Nama Anda :");
+                if (nama==null || nama==""){
+                    alert("anda tidak memasukkan input!!!Silahkan Ulangi")
+                }
+                else{
+                    alert("Halo"+ nama)
+                }
+                }
+            
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cek Nilai</title>
+        <script>
+            function calculateGrade(){
+                let nilai= Number(document.getElementById("nilai").value);
+                
+            
+            if (nilai>=80 && nilai<=100){
+             alert("Selamat, Anda mendapatkan Nilai A");
+            } else if (nilai>= 75) {
+             alert("Anda mendapatkan Nilai B+");
+            } else if (nilai>= 70) {
+            alert("Anda mendapatkan Nilai B");
+            } else if (nilai>=65) {
+             alert("Anda mendapatkan Nilai C+");
+            } else if (nilai>=60) {
+             alert("Anda mendapatkan Nilai C");
+            } else if (nilai>=55) {
+             alert("Anda mendapatkan Nilai D");
+            } else if (nilai>=0){
+              alert("Sayang sekali Anda mendapatkan Nilai E");
+            } else {
+                alert("Masukkan nilai antara 0 sampai 100");
+        }
+            
+        }
+             
+             
+         </script>
+    </head>
+    <body>
+        <form name="">
+        <label for="nilai">Input Nilai:</label>
+        <input type="number" id="nilai" nama="nilai" min="0" max="100">
+        <button onclick="calculateGrade()">Cek Nilai</button>
+        </form>
+    </body>
+</html>
